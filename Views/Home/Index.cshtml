@@ -1,0 +1,10 @@
+﻿
+@model string
+<div class="text-center">
+    <h1 class="display-4">Random Passcode </h1>
+    <h2>Contador: @ViewBag.Times</h2>
+     <p>@Context.Session.GetString("RandomsVal")</p> 
+     <form action="/generate" method="POST">
+       <button type="submit" id="boton">Generate</button>
+    </form> 
+</div>
